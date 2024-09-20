@@ -5,37 +5,37 @@ import lawyerImage from '../lawyer-image.jpg';
 const Home = () => {
   return (
     <div>
-      {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
+{/* Navbar */}
+<nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#343a40' }}>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto"> {/* Mudança de ml-auto para ms-auto */}
-            <li className="nav-item">
-              <a className="nav-link" href="#">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Serviços</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Sobre</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul className="navbar-nav ms-auto"> 
+      <li className="nav-item">
+        <a className="nav-link" href="#">Home</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="#">Serviços</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="#">Sobre</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="#">Contato</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
       {/* Seção de boas-vindas */}
       <section className="welcome-section text-center">
         <div className="container">
           <h1>Bem-vindo ao nosso Escritório</h1>
           <p>Conheça nossos serviços especializados em Direito Cível, Criminal, Família, Tributário, Concursos, Consumidor.</p>
-          <a href="/register" className="btn btn-primary">Cadastrar</a>
-          <a href="/login" className="btn btn-outline-primary">Login</a>
+          <a href="/register" className="btn-primary">Cadastrar</a>
+          <a href="/login" className="btn-outline-primary">Login</a>
         </div>
       </section>
 
