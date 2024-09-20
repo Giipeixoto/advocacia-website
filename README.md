@@ -1,6 +1,3 @@
-Claro! Aqui está a tradução do texto:
-
----
 
 # Introdução ao Create React App
 
