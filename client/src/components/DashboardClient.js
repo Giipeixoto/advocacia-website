@@ -1,18 +1,19 @@
 import React from 'react';
-import './styles.css';
 
-const DashboardClient = () => {
+const Dashboard = () => {
+  const token = localStorage.getItem('token');
+
+  if (!token) {
+    window.location.href = '/login'; // Redireciona para login se não houver token
+  }
+
   return (
-    <div className="dashboard-client-container">
-      <h1>Bem-vindo, Cliente!</h1>
-      <p>Veja suas informações:</p>
-      <ul>
-        <li>Nome: João Silva</li>
-        <li>Casos Ativos: 3</li>
-        <li>Documentos Pendentes: 1</li>
-      </ul>
+    <div className="dashboard-container">
+      <h2>Dashboard</h2>
+      <p>Bem-vindo à sua dashboard!</p>
+      {/* Aqui você pode adicionar mais funcionalidades e informações relevantes */}
     </div>
   );
 };
 
-export default DashboardClient;
+export default Dashboard;
